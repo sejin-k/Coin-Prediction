@@ -3,3 +3,9 @@ data
 
 # checkpoint files
 *.ipynb_checkpoints
+
+# img file
+*.PNG
+
+# Deeplearning model file
+*.h5
