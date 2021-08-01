@@ -1,5 +1,22 @@
 class Preprocessing:
-    
+    ''' 함수 정의
+    omitted_data_process(self, data, freq):
+        누락된 데이터를 체워주는 함수
+    missing_data_process(self, data):
+        결측치 처리하는 함수
+    add_MA(self, data)
+        이동평군선(ema, sma)을 column을 추가하는 함수
+    ema(self, data, min_=5):
+        지수이동평균 계산하는 함수
+    sma(self, data, min_=1440*7):
+        단순이동평균 계산하는 함수
+    add_MVRV_z_score(self):
+        MVRV z-score 계산하고 column에 추가하는 함수
+    preprocessing(self, data):
+        누락 데이터 처리, 결측치 한번에 처리하는 함수
+    binance_preprocessing(self,data):
+        binance데이터를 학습할 수 있는 데이터로 처리해주는 만드는 함수
+    '''
     def __init__(self, data=None):
         # 첫번째 column을 index로 지정
         if data != None:
